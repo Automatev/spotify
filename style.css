@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction:row;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.aside{
+    width: 15%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    position: fixed;
+    z-index: 2;
+}
+.logotop{
+    transform: translateY(30%) translateX(0%);
+}
+.hslaside,.cly{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    line-height: 5px;
+}
+.cly{
+    border-bottom: 0.5px solid grey;
+    width: 85%;
+    padding-bottom: 15px;
+}
+.asideimg{
+    filter: invert(1);
+}
+.createimg{
+    filter: invert();
+}
+.asidebutton{
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: grey;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding-left: 10px;
+    border-radius: 10px;
+    transform: translateX(-7%);
+}
+.asidebutton:hover{
+    background-color: rgb(16, 16, 16);
+    color: rgb(214, 214, 214);
+}
+.playlistsaside{
+    color: grey;
+    overflow: scroll;
+    padding-right:10px;
+    padding-top: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.asideplaylisttext:hover{
+    color: rgb(214, 214, 214);
+    transition: 0.2s;
+}
+/*main body container*/
+.mainbodycontainer{
+    width: 82%;
+    background-color: rgb(18,18,18);
+    min-height: 100vh;
+    max-height: auto;
+    padding-left:18% ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.upheader{
+    display: flex;
+    position: fixed;
+    z-index: 100;
+}
+.prev{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.866);
+    border-radius: 50%;
+    transform: rotate(180deg) translateY(-60%)translateX(5%);
+    filter: invert();
+}
+.next{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.866);
+    border-radius: 50%;
+    filter: invert();
+    transform: translateY(60%) translateX(10%);
+}
+.userprofile{
+    min-width:130px;
+    max-width: 150px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2px;
+    gap: 10px;
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+    transform: translateY(50%) translateX(780%);
+}
+.userimg{
+    border-radius: 40px;
+    border: 2px solid black;
+}
+.downarrowuser{
+    filter: invert();
+}
+.greeting{
+    color: white;
+    font-weight: 900;
+    font-size: 1.6rem;
+    transform: translateY(90%);
+}
+.first6links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translateY(10%);
+}
+.sixlink{
+    background-color: rgb(43,43,43);
+    width: 30%;
+    height: 85px;
+    border-radius:5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    transform: translateX(-9%);
+    cursor: pointer;
+}
+.sixlink:hover{
+    background-color:rgb(60, 60, 60) ;
+    transition: 0.2s;
+}
+.sixlinktext{
+    padding-left: 25px;
+    font-weight: 700;
+    color:white ;
+}
+/*SECOND PHASE*/
+.dailymixes{
+    background-color: rgb(22,22,22);
+    width: 13%;
+    border-radius: 8px;
+    height:270px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin: 10px;
+    cursor: pointer;
+}
+.dailymixes:hover{
+    background-color: rgb(34, 34, 34);
+    transition: 0.2s;
+}
+.greeting2{
+    font-size: 1.3rem;
+    font-weight:bolder;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.dailymiximg{
+    border-radius: 5px;
+}
+.madeforyouheading{
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+}
+.madeforyoutext{
+    color: rgb(208, 208, 208);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 95%;
+    font-weight: 700;
+    text-align: left;
+}
+.secondphase,.thirdphase,.fourthphase,.fifthphase,.sixthphase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-2%);
+}
+/*third phase*/
+.greeting3{
+    font-size: 1.3rem;
+    font-weight:bolder;
+    color: white;
+    padding-top:15px;
+    padding-bottom: 5px;
+}
+/*fourthphase*/
+.dailymiximgartist{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
